@@ -1,6 +1,2 @@
-INDEX VERSION 1.126+C:\Users\mapa0716\My_Backup\workspace\Practies_DataStructur\.metadata\.plugins\org.eclipse.jdt.core
-4114265148.index
-3772525565.index
+INDEX VERSION 1.127+C:\Users\Manoj\Desktop\git\DATASTRUCTURE\Practies_DataStructur\.metadata\.plugins\org.eclipse.jdt.core
 393695254.index
-1114496932.index
-1559934524.index
