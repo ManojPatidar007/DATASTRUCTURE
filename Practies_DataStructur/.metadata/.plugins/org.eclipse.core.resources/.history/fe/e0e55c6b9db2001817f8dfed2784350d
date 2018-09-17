@@ -1,0 +1,29 @@
+package com.mp;
+
+public class MethodOverriden {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+class A{
+	A sum(int i){
+		System.out.println("inside a");
+		return null;
+	}
+}
+class B extends A{
+
+
+	
+	B sum(int i){
+		System.out.println("inside b");
+		return null;
+	}
+	
+}

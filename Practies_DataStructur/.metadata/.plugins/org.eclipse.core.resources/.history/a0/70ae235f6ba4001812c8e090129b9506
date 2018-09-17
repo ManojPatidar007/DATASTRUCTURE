@@ -1,0 +1,48 @@
+package top_question;
+
+public class Equaltest {
+	public static void main(String[] args) {
+		String str1= new String("ABCD");
+		String str2= new String("ABCD");
+		if(str1 == str2)
+		{
+			System.out.println("String 1 == String 2 is true");
+		}
+		else
+		{
+			System.out.println("String 11 == String 2 is false");}
+		String Str3 = str2;
+		if( str2 == Str3)
+		{
+			System.out.println("String 211 == String 3 is true");
+		}
+		else
+		{
+			System.out.println("String 2111 == String 3 is false");
+		}
+		if(str1.equals(str2))
+		{
+			System.out.println("String 11111 equals string 2 is true");
+		}
+		else
+		{
+			System.out.println("String 1144 equals string 2 is false");
+		}
+		Car b= new Audi();    //upcasting
+		b.run();
+	}
+}
+class Car {
+	private void run()
+	{
+		System.out.println("car is running"); 
+	}
+}
+class Audi extends Car {
+	void run()
+	{
+		System.out.println("Audi is running safely with 100km");
+	}
+
+}
+

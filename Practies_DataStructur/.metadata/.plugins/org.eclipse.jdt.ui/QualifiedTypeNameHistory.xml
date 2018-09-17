@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.mp.StackImpl"/>
+<fullyQualifiedTypeName name="com.mp.QueImpl"/>
+<fullyQualifiedTypeName name="LinkImpl.Node"/>
+<fullyQualifiedTypeName name="LinkImpl"/>
+<fullyQualifiedTypeName name="com.mp.LinkImpl"/>
+<fullyQualifiedTypeName name="java.util.LinkedList"/>
+<fullyQualifiedTypeName name="java.util.Queue"/>
+<fullyQualifiedTypeName name="java.util.Stack"/>
+</qualifiedTypeNameHistroy>

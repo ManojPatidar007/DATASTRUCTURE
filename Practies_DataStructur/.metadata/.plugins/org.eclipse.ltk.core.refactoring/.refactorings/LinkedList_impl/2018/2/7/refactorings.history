@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;LinkImpl.java&apos; to &apos;LinkedList_impl/src/com.mp&apos;&#x0D;&#x0A;- Original project: &apos;LinkedList_impl&apos;&#x0D;&#x0A;- Destination element: &apos;LinkedList_impl/src/com.mp&apos;&#x0D;&#x0A;- Original element: &apos;LinkImpl.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src&lt;com.mp" element1="/src&lt;{LinkImpl.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1518691490440" units="1" version="1.0"/>
+</session>
