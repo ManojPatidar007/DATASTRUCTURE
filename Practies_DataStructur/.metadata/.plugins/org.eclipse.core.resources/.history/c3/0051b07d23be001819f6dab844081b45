@@ -36,7 +36,7 @@ public class LinkImpl {
 		while(next!=null){
 			if(next.value==ind){
 				pri.link=next.link;
-				System.out.println("Data avaliable="+ind);
+				System.out.println("Dota avaliable="+ind);
 				return;
 			}
 			else{
