@@ -1,8 +1,0 @@
-package com.mp;
-
-public class MeargeShort {
-	public static void main(String ar[]){
-		int a[]=new int[6];
-	}
-
-}
