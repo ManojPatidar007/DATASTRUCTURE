@@ -15,9 +15,8 @@ public class Test {
 	b.insert(12);
 	b.insert(10);
 	b.inShow();
-	b.heigth();
+	//b.heigth();
 	System.out.println("total="+b.count());
-	b.delete(30);
 
 	}
 

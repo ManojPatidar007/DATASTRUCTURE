@@ -8,16 +8,10 @@ public class Test {
 	//t.show();
 	BSTree b=new BSTree();
 	b.insert(4);
-	b.insert(30);
-	b.insert(13);
-	b.insert(23);
-	b.insert(33);
-	b.insert(12);
-	b.insert(10);
+	b.insert(3);
+	b.insert(2);
+	b.insert(1);
 	b.inShow();
-	b.heigth();
-	System.out.println("total="+b.count());
-	b.delete(30);
 
 	}
 

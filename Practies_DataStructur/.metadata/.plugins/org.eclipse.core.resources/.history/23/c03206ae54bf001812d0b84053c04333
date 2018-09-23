@@ -17,7 +17,6 @@ public class Test {
 	b.inShow();
 	b.heigth();
 	System.out.println("total="+b.count());
-	b.delete(30);
 
 	}
 

@@ -64,8 +64,7 @@ public class BSTree {
 	}
 	public void delete(int i){
 	Node n=	findElement(root,i);
-	System.out.println("found element="+n.value);
-		//delete(root,i,n);
+		delete(root,i,n);
 	}
 	private Node findElement(Node root, int i) {
 		if(root.value==i){
