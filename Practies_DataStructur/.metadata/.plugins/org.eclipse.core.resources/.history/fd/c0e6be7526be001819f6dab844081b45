@@ -1,0 +1,18 @@
+package com.mp;
+
+public class Tree {
+	Node head;
+	Tree(int data){
+		head=new Node(data);
+	}
+	public void insert(int data){
+		insert(head,data);
+	}
+	private void insert(Node head2, int data) {
+		if(head==null){
+			Tree t=new Tree(data);
+		}
+
+	}
+
+}

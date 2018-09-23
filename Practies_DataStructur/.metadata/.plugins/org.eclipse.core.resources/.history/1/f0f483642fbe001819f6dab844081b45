@@ -1,0 +1,25 @@
+package com.mp;
+
+public class BSTree {
+	Node root;
+	public void insert(int data){
+		Node node=new Node(data);
+		if(root==null){
+
+			root=node;
+			return;
+		}
+		else{
+			insert(root,data);
+		}
+	}
+	private void insert(Node root, int data) {
+		if(root.value<data){
+			insert(root.rlink,data);
+		}
+		else{
+			insert(root.llink,data);
+		}
+
+	}
+}

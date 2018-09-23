@@ -2,17 +2,12 @@ package com.mp;
 
 public class LinkImpl {
 	private Node head;
-	public LinkImpl(int item){
-		head=new Node();
-		head.value=item;
-		head.link=null;
+	public LinkImpl(){
+		
 	}
 	public boolean itemInsertFirst(int item){
-		Node node=new Node();
-		node.value=item;
-		node.link=head;
+		Node node=new Node(item);
 		head=node;
-		//LinkImpl(item);
 		return true;
 	}
 

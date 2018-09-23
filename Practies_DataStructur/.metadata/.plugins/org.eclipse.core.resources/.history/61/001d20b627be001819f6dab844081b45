@@ -1,0 +1,12 @@
+package com.mp;
+
+public class Test {
+
+	public static void main(String[] args) {
+	Tree t=new Tree(5);
+	t.insert(5);
+	t.show();
+
+	}
+
+}
