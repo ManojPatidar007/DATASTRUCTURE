@@ -1,4 +1,5 @@
 package com.mp;
+import com.mp.*;
 
  class Node{
 	protected int value;
