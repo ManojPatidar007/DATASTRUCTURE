@@ -1,5 +1,4 @@
 package com.mp;
-import com.mp.*;
 
 public class LinkImpl {
 	private Node head;
