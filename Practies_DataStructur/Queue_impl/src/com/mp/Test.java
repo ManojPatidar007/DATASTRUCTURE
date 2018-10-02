@@ -12,21 +12,25 @@ public class Test {
 	public  static void main(String ar[]){
 		
 Queue l=new LinkedList();
-		QueImpl imp=new QueImpl();
+		QueImplArray imp=new QueImplArray();
 		//Stack<Integer> stack = new Stack<Integer>();
+		imp.deQueue();
 		imp.enquque(1);
 		imp.enquque(2);
 		imp.enquque(3);
+		imp.enquque(4);
+		imp.enquque(5);
+		imp.enquque(3);
 		imp.deQueue();
 		imp.deQueue();
-		//imp.deQueue();
-		//imp.deQueue();
+		imp.enquque(3);
+		imp.enquque(3);
 		imp.show();
 		int num=50;
 		int count=0;
-		recursivefun(1);
+		//recursivefun(1);
 
-		for(int i=2;i<=num;i++){
+		/*for(int i=2;i<=num;i++){
 
 			count=0;
 
@@ -45,7 +49,7 @@ Queue l=new LinkedList();
 
 			}
 
-		}
+		}*/
 		
 	}
 	public static void recursivefun(int n) 
