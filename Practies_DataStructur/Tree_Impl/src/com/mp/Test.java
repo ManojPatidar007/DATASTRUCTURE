@@ -15,11 +15,12 @@ public class Test {
 	b.insert(33);
 	b.insert(12);
 	b.insert(10);
+	b.insert(11);
 	b.inShow();
 	b.heigth();
-	System.out.println("total="+b.count());
-	b.findElement(30);
-	b.delete(13);
+//	System.out.println("total="+b.count());
+	//b.findElement(30);
+	b.delete(23);
 	b.inShow();
 
 	}

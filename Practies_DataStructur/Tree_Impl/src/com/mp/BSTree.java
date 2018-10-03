@@ -29,6 +29,7 @@ public class BSTree {
 	private void inorderShow(Node root) {
 
 		if(root==null){return;}
+		
 		inorderShow(root.llink);
 		System.out.println(root.value);
 		inorderShow(root.rlink);
@@ -43,7 +44,7 @@ public class BSTree {
 			return 0;
 		}
 		if(root.llink==null&&root.rlink==null){
-			return 0;
+			return 1;
 		}
 		l=height(root.llink);
 		r=height(root.rlink);
@@ -101,16 +102,26 @@ public class BSTree {
 		}
 		else
 		{
+<<<<<<< HEAD
 		 if (root.llink == null) {
 		 return root.rlink; }
             else if (root.rlink == null) {
 			return root.llink; }
   
+=======
+			
+		 if (root.llink == null) {
+		 return root.rlink; }
+            else if (root.rlink == null) {
+                return root.llink; 
+			}
+>>>>>>> 3d191551df993ae58ace278d8c5531b85b2bbe08
             // node with two children: Get the inorder successor (smallest 
             // in the right subtree) 
             root.value = minValue(root.rlink); 
   
             // Delete the inorder successor 
+			
 	     root.rlink = delete(root.rlink, root.value); 
 	   }
 		return root;
