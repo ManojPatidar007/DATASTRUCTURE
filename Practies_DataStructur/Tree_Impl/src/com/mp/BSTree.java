@@ -65,7 +65,13 @@ public class BSTree {
 	public void delete(int i){
 	Node n=	findElement(root,i);
 	System.out.println("found element="+n.value);
-		//delete(root,i,n);
+		root=delete(root,i);
+	}
+	public void findElement(int key){
+		Node n= findElement(root,key);
+		if(n!=null){
+			System.out.println("found element="+n.value);
+		}
 	}
 	private Node findElement(Node root, int i) {
 		if(root.value==i){
@@ -73,19 +79,53 @@ public class BSTree {
 		}
 		else {
 			if (root.value>i){
-				findElement(root.llink, i);
+			return root.llink=findElement(root.llink, i);
+			
 			}
 			else if(root.value<i) {
-				findElement(root.rlink, i);
+			return root.rlink=findElement(root.rlink, i);
 				
 			}
 		}
 		
-		return null;
+		return root;
 	}
-	private void delete(Node root, int i, Node n) {
-		
-		
+	private Node delete(Node root, int i) {
+		if(root==null){
+			System.out.println("tree is empty");
+			return root;
+		}
+		if(i<root.value){
+			root.llink=delete(root.llink,i);
+		}
+		else if(i>root.value){
+			root.rlink=delete(root.rlink,i);
+		}
+		else
+		{
+		 if (root.llink == null) 
+                return root.rlink; 
+            else if (root.rlink == null) 
+                return root.llink; 
+  
+            // node with two children: Get the inorder successor (smallest 
+            // in the right subtree) 
+            root.value = minValue(root.rlink); 
+  
+            // Delete the inorder successor 
+	     root.rlink = delete(root.rlink, root.value); 
+	   }
+		return root;
 	}
+	 private int minValue(Node root) 
+    { 
+        int minv = root.value; 
+        while (root.llink != null) 
+        { 
+            minv = root.llink.value; 
+            root = root.llink; 
+        } 
+        return minv; 
+    } 
 	
 }
