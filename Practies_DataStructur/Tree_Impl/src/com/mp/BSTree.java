@@ -63,8 +63,6 @@ public class BSTree {
 		
 	}
 	public void delete(int i){
-	Node n=	findElement(root,i);
-	System.out.println("found element="+n.value);
 		root=delete(root,i);
 	}
 	public void findElement(int key){
@@ -103,10 +101,10 @@ public class BSTree {
 		}
 		else
 		{
-		 if (root.llink == null) 
-                return root.rlink; 
-            else if (root.rlink == null) 
-                return root.llink; 
+		 if (root.llink == null) {
+		 return root.rlink; }
+            else if (root.rlink == null) {
+			return root.llink; }
   
             // node with two children: Get the inorder successor (smallest 
             // in the right subtree) 
