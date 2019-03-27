@@ -1,6 +1,6 @@
 package com.mp;
 
- class Trest {
+ class Trest{
 	 private transient int trans_var; 
 	 private void shoe(){
 		  int trans_var; 

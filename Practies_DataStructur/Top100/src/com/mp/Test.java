@@ -6,8 +6,11 @@ public class Test {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		ImmutableEmp t=new ImmutableEmp(5);
+		ImmutableEmp d=new ImmutableEmp(5);
+		System.out.println(t.hashCode());
+		System.out.println(d.hashCode());
 	}
+	
 
 }
