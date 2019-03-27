@@ -1,0 +1,20 @@
+package com.mp.list;
+
+import java.util.*;
+
+public class ListMethod {
+
+	public static void main(String[] args) {
+		List<Integer> al=new LinkedList<Integer>();
+		al.add(3);
+		al.add(13);
+		al.add(33);
+		al.add(53);
+		al.add(23);
+		al.add(73);
+		al.add(43);
+		// TODO Auto-generated method stub
+
+	}
+
+}

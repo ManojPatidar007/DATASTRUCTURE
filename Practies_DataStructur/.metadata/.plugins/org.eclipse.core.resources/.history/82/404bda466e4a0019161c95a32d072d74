@@ -1,0 +1,36 @@
+package com.mp.list;
+
+import java.util.*;
+
+public class ListMethod {
+
+	public static void main(String[] args) {
+		List<Integer> al=new LinkedList<Integer>();
+		al.add(3);
+		al.add(13);
+		al.add(33);
+		al.add(53);
+		al.add(23);
+		al.add(73);
+		al.add(43);
+		for(int i:al){
+			System.out.print(i+" ");
+		}
+		System.out.println(al);
+	List<Character> cr=new ArrayList<Character>();
+	cr.add('w');
+	cr.add('e');
+	cr.add('d');
+	cr.add('d');
+	cr.add('h');
+	cr.add('o');
+	cr.add(6,'f');
+	System.out.println(cr);
+	Object c[]=cr.toArray();
+	Collection c1=Arrays.asList();
+	List c2=Arrays.asList();//list can convert direct
+	Set s1= new HashSet(c1);//set can not convert direct
+
+	}
+
+}

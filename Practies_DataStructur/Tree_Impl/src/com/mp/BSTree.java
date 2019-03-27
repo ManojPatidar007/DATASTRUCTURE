@@ -1,4 +1,5 @@
 package com.mp;
+import java.util.LinkedList;
 
 public class BSTree {
 	Node root=null;
@@ -102,20 +103,20 @@ public class BSTree {
 		}
 		else
 		{
-<<<<<<< HEAD
+
 		 if (root.llink == null) {
 		 return root.rlink; }
             else if (root.rlink == null) {
 			return root.llink; }
   
-=======
+
 			
 		 if (root.llink == null) {
 		 return root.rlink; }
             else if (root.rlink == null) {
                 return root.llink; 
 			}
->>>>>>> 3d191551df993ae58ace278d8c5531b85b2bbe08
+
             // node with two children: Get the inorder successor (smallest 
             // in the right subtree) 
             root.value = minValue(root.rlink); 

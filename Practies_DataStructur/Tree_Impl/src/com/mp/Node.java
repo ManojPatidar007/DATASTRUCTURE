@@ -1,11 +1,11 @@
 package com.mp;
 
-public class Node {
-	protected int value;
+public class Node<T> {
+	protected T value;
 	protected Node rlink;
 	protected Node llink;
 
-	Node(int value){
+	Node(T value){
 		this.llink=null;
 		this.rlink=null;
 		this.value=value;

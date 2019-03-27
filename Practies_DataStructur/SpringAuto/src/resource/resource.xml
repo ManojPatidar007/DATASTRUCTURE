@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans   
+               http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<!--   <bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor" 
+		/> -->
+	<bean id="ca" class="com.mp.Car" depends-on="ea" autowire="byName">
+		<property name="no" value="001"></property>
+		<property name="col" value="red"></property>
+		<property name="eng">
+			<ref local="ea" />
+		</property>
+
+	</bean>
+	<bean id="ea" class="com.mp.Engine">
+		<property name="model" value="201"></property>
+	</bean>
+	<bean id="altoAutowire" class="com.mp.AltoAutowire" >
+		<property name="name" value="800" />
+	</bean>
+
+</beans>
