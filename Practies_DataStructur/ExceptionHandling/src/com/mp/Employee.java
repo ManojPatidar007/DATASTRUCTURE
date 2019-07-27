@@ -35,5 +35,16 @@ public class Employee {
 	public String toString(){
 		return "id="+id+" name="+name+" age="+age;
 	} 
+	public boolean equals(Object o){
+		if(o instanceof Employee &&(this.id==((Employee)o).getId())){
+			return true;
+		}
+		return false;
+	}
+	
+	public int hashCode(){
+		
+		return this.getAge();
+	}
 
 }

@@ -14,7 +14,8 @@ public class Test {
 	public static void main(String[] args) {
 		Resource rs=new ClassPathResource("resource.xml");
 		BeanFactory fac=new XmlBeanFactory(rs);
-		System.out.println("hello");
+		Employee e=(Employee)fac.getBean("ab");
+		System.out.println("hello"+e.getId());
 
 	}
 

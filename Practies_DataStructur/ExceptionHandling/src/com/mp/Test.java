@@ -14,7 +14,7 @@ public class Test {
 		System.out.println("ram="+age);
 		Test t=new Test();
 		try{
-		t.validate(age);}
+		t.validate(68);}
 		catch(Exception e){
 			e.printStackTrace();
 		}

@@ -1,5 +1,4 @@
 package com.mp;
-import java.util.LinkedList;
 
 public class BSTree {
 	Node root=null;
@@ -9,20 +8,26 @@ public class BSTree {
 		root=insert(this.root,data);
 
 	}
+	public void insert(char data){
+
+		root=insert(this.root,data);
+
+	}
 	private Node insert(Node root, int data) {
 		if(root==null){
 			Node node=new Node(data);
 			return node;
 		}
-		if(root.value<data){
+		int r= (int) root.value;
+		if(r<data){
 			root.rlink=	insert(root.rlink,data);
 		}
-		else{
+		else if(r>data){
 			root.llink=insert(root.llink,data);
 		}
 		return root;
 	}
-
+	
 	public void inShow(){
 
 		inorderShow(root);
@@ -74,15 +79,16 @@ public class BSTree {
 		}
 	}
 	private Node findElement(Node root, int i) {
-		if(root.value==i){
+		int r=(int) root.value;
+		if(r==i){
 			return root;
 		}
 		else {
-			if (root.value>i){
+			if (r>i){
 			return root.llink=findElement(root.llink, i);
 			
 			}
-			else if(root.value<i) {
+			else if(r<i) {
 			return root.rlink=findElement(root.rlink, i);
 				
 			}
@@ -91,14 +97,15 @@ public class BSTree {
 		return root;
 	}
 	private Node delete(Node root, int i) {
+		int r=(int)root.value;
 		if(root==null){
 			System.out.println("tree is empty");
 			return root;
 		}
-		if(i<root.value){
+		if(i<r){
 			root.llink=delete(root.llink,i);
 		}
-		else if(i>root.value){
+		else if(i>r){
 			root.rlink=delete(root.rlink,i);
 		}
 		else
@@ -123,16 +130,16 @@ public class BSTree {
   
             // Delete the inorder successor 
 			
-	     root.rlink = delete(root.rlink, root.value); 
+	     root.rlink = delete(root.rlink, (int)root.value); 
 	   }
 		return root;
 	}
 	 private int minValue(Node root) 
     { 
-        int minv = root.value; 
+        int minv = (int)root.value; 
         while (root.llink != null) 
         { 
-            minv = root.llink.value; 
+            minv = (int)root.llink.value; 
             root = root.llink; 
         } 
         return minv; 

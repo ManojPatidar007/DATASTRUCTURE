@@ -7,10 +7,16 @@ public class Test {
 	t.insert(5);
 	//t.show();
 	BSTree b=new BSTree();
+	BSTree c=new BSTree();
+	c.insert('a');
+	c.insert('a');
+	c.insert('b');
+	c.insert('b');
 	b.insert(23);
 	b.insert(4);
 	b.insert(30);
 	b.insert(13);
+	c.inShow();
 	
 	b.insert(33);
 	b.insert(12);

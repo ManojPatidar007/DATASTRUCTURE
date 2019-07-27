@@ -14,6 +14,7 @@ public class WithoutCatch extends Exception  {
 	            System.out.println(url);
 	        } 
 		 catch(Exception e){
+			 try{}catch(Exception e1){}
 			 
 		 }
 		 finally{
@@ -24,7 +25,7 @@ public class WithoutCatch extends Exception  {
 			 
 			 FileInputStream fr=new FileInputStream(f1);
 			 fr.read();//.toString();
-		 }
+		 }catch(Exception e){}
 		 
 		 finally{
 			 

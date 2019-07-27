@@ -1,4 +1,4 @@
-package com.mp.graph;
+package graph;
 
 import java.util.LinkedList;
 
@@ -22,7 +22,7 @@ public class Node<E> {
 		if (root == null) {
 			root = new Node(i);
 		}
-
+		
 	}
 
 }
